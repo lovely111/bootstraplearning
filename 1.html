@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>index page</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-1.12.2.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+            $('[data-toggle="popover"]').popover();
+        });
+    </script>
+    <!--&lt;!&ndash;CSS框架样式引用，自定义的CSS样式，引用Js，引用Js，注意引用顺序，后引用的优先级别比较高&ndash;&gt;
+    做提示工具和弹出框的时候用到。-->
+</head>
+<body>
+<div id="modal" class="modal">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                header...
+                <button class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                body...
+            </div>
+            <div class="modal-footer">
+                footer...
+                <button class="btn btn-primary" data-dismiss="modal">close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
+<div class="progress">
+    <div class="progress-bar progress-bar-danger progress-bar-striped" style="width: 70%;">
+        70% completed...
+    </div>
+</div>
+</body>
+</html>
